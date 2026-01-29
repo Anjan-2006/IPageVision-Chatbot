@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipage vision chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "226fc0f9-8ede-45ed-aa53-89ddce0e4ed3",
+        apiHost: "http://localhost:3000",
+        chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#FF4500',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://www.ipagevision.com/images/logo.png',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Chat with IPage Vision 👋',
+                tooltipBackgroundColor: '#FF4500',
+                tooltipTextColor: '#ffffff',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+                textColor: 'black',
+                buttonColor: '#3b82f6',
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'white'
+            },
+            customCSS: `
+                            * {
+                    font-family: 'Inter', -apple-system, BlinkMacSystemFont,
+                                'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+                }
+
+                input, textarea, button {
+                    font-family: 'Inter', -apple-system, BlinkMacSystemFont,
+                                'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+                    font-weight: 500;
+                }`,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'IPage Vision Help',
+                titleAvatarSrc: 'https://www.ipagevision.com/images/logo.png',
+                welcomeMessage: 'Hi 👋 I’m the IPage Vision assistant. How can I help you today?',
+                errorMessage: 'This is a custom error message',
+                backgroundColor: '#ffffff',
+                backgroundImage: 'enter image path or link',
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://www.ipagevision.com/images/logo.png'
+                },
+                userMessage: {
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://www.ipagevision.com/images/logo.png'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#FF4500',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Powered by',
+                    company: 'IPage Vision',
+                    companyLink: 'https://www.ipagevision.com/'
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
