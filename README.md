@@ -63,7 +63,7 @@ This project demonstrates a real-world implementation of Retrieval-Augmented Gen
 
 **Title:** IPage Vision AI Chatbot Demo
 **Duration:** 7 minutes
-**Link:** [https://youtu.be/SjS55a8MuKw](https://youtu.be/SjS55a8MuKw)
+**Link:** [https://youtu.be/IKhDUFbLl2s?si=2KhGI8nfzYXw1iAI](https://youtu.be/IKhDUFbLl2s?si=2KhGI8nfzYXw1iAI)
 
 The demo provides an end-to-end walkthrough of the chatbot, covering query handling, vector-based document retrieval, conversational memory, and voice input support.
 
